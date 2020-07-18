@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan-names</title>
     <link rel="stylesheet" href="css/style.css" media="all">
-    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -18,10 +17,10 @@
             <p>This is a project that takes date of birth as input from user and use it
                 to determine the day of the week born and subsequently their Akan names.
             </p>
-            <p>Frequently in Ghana, children are given their first name as a 'day name' 
+            <p>Frequently in Ghana, children are given their first name as a 'day name'
                 which corresponds to the day in the week they were born.</p>
             <div>
-             <p>Fill the form below to get your akan name.</p>   
+                <p>Fill the form below to get your akan name.</p>
                 <label for="year">year</label>
                 <input type="text" name="year" id="year" placeholder="YYYY">
             </div>
@@ -43,13 +42,15 @@
                 <input type="radio" name="gender" id="female">
             </div>
             <div>
-                <button type="button">Generate name</button>
+                <button id="gen-name" type="submit" name="">Generate name</button>
             </div>
             <div>
                 <button type="reset">Clear input</button>
             </div>
         </form>
     </div>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
