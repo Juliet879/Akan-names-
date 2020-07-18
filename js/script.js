@@ -1,11 +1,9 @@
 function getAkanName() {
     let yearOfBirth = document.getElementById("year-input").value;
     let monthOfBirth = Number(document.getElementById("month-input").value);
-    let dayOfBirth = Number(document.getElementById("day-input").value);
+    let dayOfBirth = Number(document.getElementById("day-input").value)
+    let genders = document.getElementByName("gender");
 }
-
-let genders = document.getElementByName("gender");
-
 function getGender() {
     for (gender of genders) {
         if (genders.checked) {
@@ -42,6 +40,10 @@ if (monthOfBirth === 2 && Number(yearOfBirth) % 4 === 0) {
 let dayOfWeek = Math.floor((((Number(yearOfBirth.slice(0, 2)) / 4) - 2 * Number(yearOfBirth.slice(0, 2)) - 1) +
     ((5 * Number(yearOfBirth.slice(2, 4)) / 4)) + ((26 * (monthOfBirth + 1) / 10)) + dayOfBirth) % 7);
 
+let daysOfWeek = [
+    "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+];
+
 // Akan names for males and females
 let maleAkanNames = [
     "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "kwame"
@@ -49,9 +51,19 @@ let maleAkanNames = [
 
 let femaleAkanNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
-]
+];
+
+// generating index value to items in the Array
+let index
+if (dayOfWeek ==0){
+    index = 6;
+}else{
+    index = dayOfWeek - 1;
+}
+console.log(index)
 
 if (myGenderValue == "female" && monthValid && dayValid) {
+   
     switch (dayOfWeekNumber) {
         case 1:
             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[0];
@@ -98,6 +110,7 @@ if (myGenderValue == "female" && monthValid && dayValid) {
     }
 }
 else if (myGenderValue == "male" && monthValid && dayValid) {
+   
     switch (dayOfWeekNumber) {
         case 1:
             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[0];
