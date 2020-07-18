@@ -3,7 +3,7 @@
    event.preventDefault()
    let input = document.getElementById('inputD').value
    let res = document.getElementById('response')
-    res.innerHTML = `<h1>${input}</h1>`
+    res.innerHTML = <h1>${input}</h1>
 
 // var score = parseInt(prompt("Enter the score: "));
 // if (score >=80){
