@@ -60,7 +60,7 @@ if (dayOfWeek ==0){
 }else{
     index = dayOfWeek - 1;
 }
-console.log(index)
+console.log(index);
 
 if (myGenderValue == "female" && monthValid && dayValid) {
    

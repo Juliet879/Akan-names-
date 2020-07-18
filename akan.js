@@ -63,7 +63,7 @@ if (dayOfWeek ==0){
 }else{
     index = dayOfWeek - 1;
 }
-console.log(index)
+console.log(index);
 
 if (myGenderValue == "female" && monthValid && dayValid) {
     document.getElementById('result').textContent = "Born on a" + daysOfWeek[index] + " ,Akan name " + femaleAkanNames[index];
