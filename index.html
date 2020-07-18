@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan-names</title>
-    <link rel="stylesheet" href="css/styles.css" type="styles.css">
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -14,24 +14,40 @@
     <div class="form">
         <form action="results.html" method="GET" name="myform">
 
-            <h1>AKAN NAMES</h1>
+            <h2>The Akan Name Generator</h2>
+            <p>This is a project that takes date of birth as input from user and use it
+                to determine the day of the week born and subsequently their Akan names.
+            </p>
+            <p>Frequently in Ghana, children are given their first name as a 'day name' 
+                which corresponds to the day in the week they were born.</p>
             <div>
-                <label for="Date of Birth">Date of Birth</label>
-                <input type="text" name="date of birth" id="date of birth" placeholder="date of birth">
+             <p>Fill the form below to get your akan name.</p>   
+                <label for="year">year</label>
+                <input type="text" name="year" id="year" placeholder="YYYY">
             </div>
             <div>
-                <label for="Gender">Gender</label>
-                <input name="gender">
+                <label for="month">month</label>
+                <input type="text" name="month" id="month" placeholder="MM">
             </div>
             <div>
-                <label for="password">Password</label>
-                <input type="password" name="password">
+                <label for="date">date</label>
+                <input type="text" name="date" id="date" placeholder="DD">
+            </div>
+            <p>Choose gender</p>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
             </div>
             <div>
-                <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
             </div>
-            <input type="button" value="My Akan Name" onclick="write_name() ;" />
+            <div>
+                <button type="button">Generate name</button>
+            </div>
+            <div>
+                <button type="reset">Clear input</button>
+            </div>
         </form>
     </div>
 </body>
