@@ -5,7 +5,6 @@
    let res = document.getElementById('response')
     res.innerHTML = `<h1>${input}</h1>`
 
- <h1>Hello</h1>
 // var score = parseInt(prompt("Enter the score: "));
 // if (score >=80){
 // alert("your grade is A");
