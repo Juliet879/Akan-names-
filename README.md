@@ -1,6 +1,6 @@
 # Portfolio
 #### This is a website project that gives the Akan name of users by inputed user's birthdate and gender, 19 July,2020.
-#### By **Juliet Gisemba**
+#### By **Juliet Gisemba** 
 
 ## Description
 This is a link to my [github repository](https://github.com/Juliet879/Akan-names-)
