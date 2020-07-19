@@ -1,6 +1,16 @@
 .big-banner{
-    background-color: turquoise;
-    /* background-image:url(http://www.africaimagelibrary.com/-/galleries/west-africa/ghana/-/medias/6a712f0a-a1ce-11e2-956e-f3f957108180-beaded-jewelry-for-sale-at-cedi-s-bead-factory-ghana) ; */
+    background-color: white;
     width: 650px;
-    height: 650px;
+    height: 520px;
+    font-size: 13px;
+    color: rgba(196, 16, 16, 0.438);
+}
+.jumbotron{
+    width: 620px;
+    height: 200px;
+    display: flex;
+    padding-top: 30px;
+}
+.contain{
+    background-image: url(https://www.livetipsportal.com/wp-content/uploads/2019/11/adobe-stock-flag-ghana-rawpixel.jpeg);
 }
