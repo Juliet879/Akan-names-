@@ -1,7 +1,7 @@
 .big-banner{
     background-color: white;
     width: 650px;
-    height: 520px;
+    height: 580px;
     font-size: 13px;
     color: rgba(196, 16, 16, 0.438);
 }
@@ -13,4 +13,7 @@
 }
 .contain{
     background-image: url(https://www.livetipsportal.com/wp-content/uploads/2019/11/adobe-stock-flag-ghana-rawpixel.jpeg);
+}
+#get-name{
+    color: black;
 }

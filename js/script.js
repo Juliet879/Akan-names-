@@ -37,8 +37,11 @@ if (monthOfBirth === 2 && Number(yearOfBirth) % 4 === 0) {
 }
 
 // formula to determine day of birth (Sunday=1 , Monday=2)
-let dayOfWeek = Math.floor((((Number(yearOfBirth.slice(0, 2)) / 4) - 2 * Number(yearOfBirth.slice(0, 2)) - 1) +
-    ((5 * Number(yearOfBirth.slice(2, 4)) / 4)) + ((26 * (monthOfBirth + 1) / 10)) + dayOfBirth) % 7);
+var a =Math.floor( (14 - month) / 12)
+                                  
+var y = year - a                   
+var m = month + 12 * a - 2
+var d = (day + y +Math.floor( y / 4) - Math.floor(y / 100)  + Math.floor( year / 400 ) + Math.floor((31 * m / 12)) % 7)
 
 let daysOfWeek = [
     "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -52,15 +55,6 @@ let maleAkanNames = [
 let femaleAkanNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
 ];
-
-// generating index value to items in the Array
-let index
-if (dayOfWeek ==0){
-    index = 6;
-}else{
-    index = dayOfWeek - 1;
-}
-console.log(index);
 
 if (myGenderValue == "female" && monthValid && dayValid) {
    

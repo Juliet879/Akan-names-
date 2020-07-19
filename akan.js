@@ -40,8 +40,11 @@ let monthValid = monthValidator();
 
 
 // formula to determine day of birth (Sunday=1 , Monday=2)
-let dayOfWeek = Math.floor((((Number(yearOfBirth.slice(0, 2)) / 4) - 2 * Number(yearOfBirth.slice(0, 2)) - 1) +
-    ((5 * Number(yearOfBirth.slice(2, 4)) / 4)) + ((26 * (monthOfBirth + 1) / 10)) + dayOfBirth) % 7);
+var a =Math.floor( (14 - month) / 12)
+                                  
+var y = year - a                   
+var m = month + 12 * a - 2
+var d = (day + y +Math.floor( y / 4) - Math.floor(y / 100)  + Math.floor( year / 400 ) + Math.floor((31 * m / 12)) % 7)
 
 let daysOfWeek = [
     "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -76,7 +79,7 @@ else if (myGenderValue == "male" && monthValid && dayValid) {
         document.getElementById('result').textContent = "Born on a" + daysOfWeek[index] + " ,Akan name " + maleAkanNames[index];
         document.getElementById('display-name').textContent = "Your Akan name: ";
         document.getElementById('result').style.fontSize = "15px";
-        document.querySelector('h1')('result').textContent = "Hello" + " " + femaleAkanNames[index];
+        document.querySelector('h1')('result').textContent = "Hello" + " " + maleAkanNames[index];
     
 }
 else{
