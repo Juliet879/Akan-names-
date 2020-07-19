@@ -1,5 +1,6 @@
 # Portfolio
 #### This is a website project that gives the Akan name of users by inputed user's birthdate and gender, 19 July,2020.
+https://i.ytimg.com/vi/TCYTVu9m9is/maxresdefault.jpg
 #### By **Juliet Gisemba** 
 
 ## Description

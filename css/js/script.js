@@ -1,4 +1,3 @@
-   var day = (( ( (century/4) -2*centuary-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) %7)
 function getDate(){
     var date = getElementById("day").value;
     var month = getElementById("month").value;
@@ -6,34 +5,9 @@ function getDate(){
     var century = year.slice(0, 1)
     var years= year.slice(2, 3)
 }
-function gender(){
-    var male = getElementByName("gender").value;
-}
-function getDay(){
-    var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
-    var female = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-
-    if (dayOfBirth<=0 || dayOfBirth>31){
-        return false;
-    }
-    else
-        return true;
-
-}
-
-
-
-
-
-
-
-
-
-
 
 if (year === '' || year.length > 4 || year.length < 4){
-    alert('Enter the year correctly');
+    alert('Fill correct year');
 } else if(month === '' || month < 1 || month > 12) {
     alert('Enter the month correctly');
 } else if(date === '' || date < 0 || date > 31) {
@@ -42,26 +16,24 @@ if (year === '' || year.length > 4 || year.length < 4){
     var day = Math.floor( ( ( (century/4) -2*century-1) + ((5*years/4) ) + ((26*(month+1)/10)) + date) % 7);
     return day
 }
-}
-function getGender() {
-var radio = document.getElementsByName('gender');
-for (var i = 0; i < radio.length; i++) {
-    if (radio[i].checked) {
-        var gender = radio[i].value;
-        return gender;
+function getGender(){
+    var checkbox = getElementByName("gender").value;
+    for (var i = 0;  i< checkbox.length; i++) {
+        if (checkbox[i].checked) {
+            var gender = checkbox[i].value;
+            return gender;
+        }
     }
 }
-}
-function getName() {
-    var name = document.getElementById('name').value;
-    var male = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-    var female = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-    var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    if (getGender() === 'male' && getDay() >= 0) {
-        document.getElementById('post').innerHTML = ('Hey ') + (document.getElementById('name').value) + ('!') + (' If you were a Ghanian Male') +(' born on a ') + day[getDay(name)] + (',') + (' Your Akan name would be ') + male[getDay(name)] + ('.');
-    } else if (getGender() === 'female' && getDay() >= 0) {
-        document.getElementById('post').innerHTML = ('Hey ') + (document.getElementById('name').value) + ('!') + (' If you were a Ghanian Female') + (' born on a ') + day[getDay(name)] + (',') + (' Your Akan name would be ') + female[getDay(name)] + ('.');
+function getDay(){
+    var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    var male = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
+   var female = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+      if (getGender() === 'male' && getDay() >= 0) {
+          document.getElementById('post').innerHTML = ('Hey ') + ('!') + ('You born on a ') + day[getDay(name)] + (',') + (' your Akan name is ') + male[getDay(name)] + ('.');
+      } else if (getGender() === 'female' && getDay() >= 0) {
+        document.getElementById('post').innerHTML = ('Hey ') + ('!') + ('You born on a ') + day[getDay(name)] + (',') + (' your Akan name is ') + female[getDay(name)] + ('.');
     } else {
-        alert('Kindly Check your details and enter them correctly then retry');
-    }
+          alert('Kindly enter correctly then retry');
+      }
 }
