@@ -1,12 +1,15 @@
 # Portfolio
-#### This is a brief description of what i do,that sells me to the market, 12 July,2020.
+#### This is a website project that gives the Akan name of users by inputed user's birthdate and gender, 19 July,2020.
 #### By **Juliet Gisemba**
 
 ## Description
 This is a link to my [github repository](https://github.com/Juliet879/Akan-names-)
 
-This website contains a description of my developing skills.In it are some of the projects have worked on upto date.
-
+This is a project that takes date of birth as input from user and use it
+to determine the day of the week born and subsequently their Akan name
+Frequently in Ghana, children are given their first name as a 'day name'
+which corresponds to the day in the week they were born.
+                
 ## Setup/Installation Requirements
 * Click on the reposity above to open
 * Fork the repository
