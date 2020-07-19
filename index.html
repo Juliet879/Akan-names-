@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan-names</title>
-    <link rel="stylesheet" href="css/stytle.css" type="styles.css">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/stytle.css" type="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stytle.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <form action="results.html" method="GET" name="myform" onsubmit="return getAkanName()">
+    <div class="container big-banner">
+        <div class="jumbotron">
+            <form action="results.html" method="GET" name="myform" onsubmit="return getAkanName()">
 
-            <h2>The Akan Name Generator</h2>
-            <p>This is a project that takes date of birth as input from user and use it
-                to determine the day of the week born and subsequently their Akan names.
-            </p>
-            <p>Frequently in Ghana, children are given their first name as a 'day name'
-                which corresponds to the day in the week they were born.</p>
-            <div>
+                <h2>The Akan Name Generator</h2>
+                <p>This is a project that takes date of birth as input from user and use it
+                    to determine the day of the week born and subsequently their Akan names.
+                </p>
+                <p>Frequently in Ghana, children are given their first name as a 'day name'
+                    which corresponds to the day in the week they were born.</p>
+                <div>
+                </div>
                 <p>Fill the form below to get your akan name.</p>
-                <label for="year">year</label>
-                <input type="text" name="year" id="year" placeholder="YYYY">
-            </div>
+        </div>
+        <div class="row">
+            <label for="year">year</label>
+            <input type="text" name="year" id="year" placeholder="YYYY">
             <div>
                 <label for="month">month</label>
                 <input type="text" name="month" id="month" placeholder="MM">
@@ -33,6 +38,8 @@
                 <label for="date">date</label>
                 <input type="text" name="date" id="date" placeholder="DD">
             </div>
+        </div>
+        <br>
             <p>Choose gender</p>
             <div>
                 <label for="male">Male</label>
@@ -49,12 +56,10 @@
                 <button type="reset">Clear input</button>
             </div>
         </form>
+
     </div>
     <script src="script/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
+   
 </body>
 
 </html>
