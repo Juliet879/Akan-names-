@@ -10,6 +10,11 @@ This is a project that takes date of birth as input from user and use it
 to determine the day of the week born and subsequently their Akan name
 Frequently in Ghana, children are given their first name as a 'day name'
 which corresponds to the day in the week they were born.
+
+## BDD
+* Enter your birth Year,Yonth and Date.
+* Enter your gender.
+* Enter "Getenate name"
                 
 ## Setup/Installation Requirements
 * Click on the reposity above to open

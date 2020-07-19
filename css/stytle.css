@@ -1,19 +1,20 @@
 .big-banner{
-    background-color: white;
-    width: 650px;
+    /* background-image: url(https://i.ytimg.com/vi/TCYTVu9m9is/maxresdefault.jpg); */
+    width: 600px;
     height: 580px;
     font-size: 13px;
-    color: rgba(196, 16, 16, 0.438);
+    color: black;
+    background-color: blanchedalmond;
 }
 .jumbotron{ 
-    width: 620px;
+    width: 580px;
     height: 200px;
     display: flex;
     padding-top: 30px;
 }
 .contain{
-    background-image: url(https://www.livetipsportal.com/wp-content/uploads/2019/11/adobe-stock-flag-ghana-rawpixel.jpeg);
+    background-image: url(https://i.ytimg.com/vi/TCYTVu9m9is/maxresdefault.jpg);
 }
-#get-name{
-    color: black;
+.body{
+    margin-left: 200px;
 }
