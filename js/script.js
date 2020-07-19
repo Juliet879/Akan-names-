@@ -56,96 +56,108 @@ let femaleAkanNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
 ];
 
+// index value to items in Array
+
+let index
+if (dayOfWeek ==0){
+    index = 6;
+}else{
+    index = dayOfWeek - 1;
+}
+console.log(index);
+
+
 if (myGenderValue == "female" && monthValid && dayValid) {
-   
+    document.querySelector('h1')('result').textContent = "Hello" + " " + femaleAkanNames[index];
+    
     switch (dayOfWeekNumber) {
         case 1:
             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[0];
             document.getElementById('display-name').textContent = "Your Akan name is: ";
             return false;
             break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[1];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[2];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[3];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[4];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[5];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[6];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[0];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        default: alert("OOPS NO NAME FOUND")
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[1];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[2];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[3];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[4];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[5];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[6];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + femaleAkanNames[0];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         default: alert("OOPS NO NAME FOUND")
 
-    }
-}
-else if (myGenderValue == "male" && monthValid && dayValid) {
+//     }
+// }
+// else if (myGenderValue == "male" && monthValid && dayValid) {
    
-    switch (dayOfWeekNumber) {
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[0];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[1];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[2];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[3];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[4];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[5];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[6];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
-        case 1:
-            document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[0];
-            document.getElementById('display-name').textContent = "Your Akan name is: ";
-            return false;
-            break;
+//     switch (dayOfWeekNumber) {
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[0];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[1];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[2];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[3];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[4];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[5];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[6];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
+//         case 1:
+//             document.getElementById('result').textContent = "Born on Sunday,Akan name" + maleAkanNames[0];
+//             document.getElementById('display-name').textContent = "Your Akan name is: ";
+//             return false;
+//             break;
 
-    }
-}
+//     }
+// }
