@@ -6,6 +6,8 @@
 ## Description
 This is a link to my [github repository](https://github.com/Juliet879/Akan-names-)
 
+Project [live link](https://github.com/Juliet879/Akan-names-)
+
 This is a project that takes date of birth as input from user and use it
 to determine the day of the week born and subsequently their Akan name
 Frequently in Ghana, children are given their first name as a 'day name'
