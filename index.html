@@ -4,62 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan-names</title>
-    <link rel="stylesheet" href="css/stytle.css" type="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stytle.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    <title>Akan names</title>
 </head>
 
 <body>
-    <div class="contain">
         <div class="container big-banner">
             <div class="jumbotron">
-                <form action="results.html" method="GET" name="myform" onsubmit="return getAkanName()">
-                    <div>
-                        <h2>The Akan Name Generator</h2>
-                        <p>This is a project that takes date of birth as input from user and use it
-                            to determine the day of the week born and subsequently their Akan names.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Frequently in Ghana, children are given their first name as a 'day name'
-                            which corresponds to the day in the week they were born.</p>
-                    </div>
-            </div>
-            <label for="year">year</label>
-            <input type="text" name="year" id="year" placeholder="YYYY">
-            <div>
-                <label for="month">month</label>
-                <input type="text" name="month" id="month" placeholder="MM">
-            </div>
-            <div>
-                <label for="date">date</label>
-                <input type="text" name="date" id="date" placeholder="DD">
-            </div>
-            <br>
-            <div>
-                <p>Choose gender</p>
-
-                <label for="male">Male</label>
-                <input type="checkbox" name="gender" value="male">
-                <label for="female">Female</label>
-                <input type="checkbox" name="gender" value="female">
                 <div>
-                    <button id="get-name" type="submit" name="">Generate name</button>
+                    <h2>The Akan Name Generator</h2>
+                    <p>This is a project that takes date of birth as input from user and use it
+                        to determine the day of the week born and subsequently their Akan names.
+                    </p>
                 </div>
-                <button type="reset">Clear input</button>
+                <div>
+                    <p>Frequently in Ghana, children are given their first name as a 'day name'
+                        which corresponds to the day in the week they were born.</p>
+                </div>
             </div>
-            <footer class="footer">
-                <p>© 2020 Copyright: Gisemba Juliet.</p>
-            </footer>
+
+            <div id="center">
+
+            <form id="form" name="form">
+                <label for="year">Enter your Year:</label><br>
+                <input type="number" id="year" name="year" placeholder="YYYY" required><br>
+                <label for="month">Enter your Month:</label><br>
+                <input type="number" id="month" name="month" placeholder="MM" required><br>
+                <label for="day">Enter your Day:</label><br>
+                <input type="number" id="day" name="day" placeholder="DD" required><br>
+                <div>
+
+                    <p>Choose gender</p>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female">
+
+                    <div>
+                        <input type="Reset" class="reset">
+                        <button type="submit" onclick="getName();return false;" value="submit">submit</button>
+                    </div>
+                </div>
+                <div class="result">
+                    <p id="post"></p>
+                </div>
+
+                <footer class="footer">
+                    <p>© 2020 Copyright: Gisemba Juliet.</p>
+                </footer>
             </form>
-
         </div>
-    </div>
-
-    <script src="js/script.js"></script>
+        </div>
+      <script src="scripts.js"></script>
 </body>
 
 </html>

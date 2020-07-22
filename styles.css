@@ -1,0 +1,20 @@
+ .container{
+    background-image: url(https://www.aljazeera.com/mritems/Images/2017/3/6/70a7249527f445f8bb0f8ed91e0b8bdd_18.jpg);
+    color: wheat;
+}
+.body{
+    margin-left: 200px;
+}
+.footer{
+    color: white;
+    margin-left: 200px;
+    margin-top: 100px;
+} 
+.jumbotron{
+    width: 590px;
+    height: 230px;
+    color: black;
+}
+#center{
+    margin-left: 70px;
+}
